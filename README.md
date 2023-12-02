@@ -1,3 +1,17 @@
+## TLDR
+- cool setup with nextjs.
+- to use redux selector and dispatch: useAppSelector and useAppDispatch
+- for ui and style: tailwind lucide and shadcn
+
+## What's this
+- this quick setup for nextjs with tailwind, redux, shadcn, and lucide-react.
+- from shadcn the Button and Input component are already added with the purple theme (to change the theme) just go into src/app/global.css and change the variable values inside :root
+- all file regarding redux are into src/lib/redux the store is provided in a component inside this folder called ReduxStoreProvider that just provide the store and load children, this componend is rendered in src/app/layout.tsx. for the selector and dispatch there are 2 custom hooks which are called useAppSelector and useAppDispatch, they work the same as their normal counterpart but are typed.
+- there is also a function in utils called cn that is used by shadcn, it's just a function that use tailwind-merge and clsx together you can also use it into component to have the className loaded better (don't move or delete this file or the function in it, you can add other function if you want but leave the cn function where it is as it is used by shadcn)
+
+
+# Nextjs default readme
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
